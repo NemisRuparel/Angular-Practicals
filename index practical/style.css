@@ -1,0 +1,109 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color: #D3D2D2;
+}
+a{
+  text-decoration: none;
+  color: #EF714C;
+}
+ul,li{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    gap: 25px;
+    margin-left: -8px;
+}
+.half{
+    background-color: #D087B7;
+    width: 100.9%;
+    margin-left: -8px;
+}
+.conatiner{
+    padding: 10px;
+    border: 2px solid #F64041;
+}
+.head{
+    display: flex;
+    background-color: #ECDBCF;
+    border: 2px solid #F64041;
+    width: 1741px;
+    margin-top: -8px;
+}
+.head img{
+    height: 80px;
+    width: 80px;
+}
+nav{
+    font-size: 19px;
+    margin-top: 7px;
+    width: 1725px;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    background-color: #F1BABA;
+    height: 20px;
+}
+.kankariya{
+    background-color: white;
+    margin-top: 7px;
+    display: flex;
+    height: 190px;
+    width: 1721px;
+    text-align: justify;
+    font-size: 20px;
+    border: 2px solid #F64041;
+    padding-right: 20px;
+}
+.kankariya img{
+    height: 180PX;
+    margin-top: 4px;
+    width: 300px;
+}
+.half1{
+    display: flex;
+}
+.adalaj{
+    height: 300px;
+    padding-right: 15px;
+    width: 800px;
+    margin-top: 10px;
+    background-color: white;
+    margin-left: 15px;
+    border: 2px dashed #F64041;
+    text-align: justify;
+    font-size: 20px;
+    
+}
+.adalaj button, .metro button{
+        height: 40px;
+        width: 150px;
+        background-color: #F64041;
+        border-radius: 50px;
+        border: none;
+        margin-left: 650px;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+}
+.metro{
+    font-size: 20px;
+    height: 340px;
+    padding-right: 15px;
+    width: 800px;
+    margin-top: 10px;
+    background-color: white;
+    margin-left: 60px;
+    border: 2px dashed #F64041;
+    text-align: justify;
+}
+.copyright{
+    width: 101%;
+    margin-left: -10px;
+    background-color: #D087B7;
+    font-size: 30px;
+    height: 100px;
+    margin-top:40px;
+}
