@@ -1,0 +1,17 @@
+<h1 align="center">ngFor Exapmle</h1>
+<div>
+    <table style="border:1px solid black;text-align: center;padding:10px;margin-left: 720px;">
+        <tr style="border:1px solid black">
+            <th style="border:1px solid black;padding: 10px;">
+                Name
+            </th>
+            <th style="border:1px solid black">
+                Role
+            </th>
+        </tr>
+            <tr *ngFor="let i of user" >
+                <td style="border:1px solid black;padding: 3px;">{{i.name}}</td>
+                <td style="border:1px solid black;padding:3px">{{i.role}}</td>
+            </tr>
+    </table>
+</div>

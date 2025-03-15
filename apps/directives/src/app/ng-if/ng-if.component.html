@@ -1,0 +1,9 @@
+<h1 align="center">ngIf Example</h1>
+<div *ngIf="back else click">
+    <h3>Hello From {{me}}</h3>
+    <button (click)="Back()">back</button>
+</div>
+<ng-template #click>
+    <h3>Click to get greetings from me 😊</h3>
+    <button (click)="login()">click</button>
+</ng-template>

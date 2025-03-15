@@ -1,0 +1,25 @@
+<h1 align="center">ngSwitch Example</h1>
+<div (change)="chooseProduct($event)">
+    <select>
+        <option value="">Choose Tool</option>
+        <option value="vscode">Visual Studio Code</option>
+        <option value="virtualbox">Virtual Box</option>
+        <option value="androidstudio">Android Studio</option>
+    </select>
+</div>
+
+<div [ngSwitch]="selectedtool" class="main">
+    <div *ngSwitchCase = "'vscode'">
+        <p style="margin-top: 20px;">this is VS Code logo</p> <br>
+        <img src="assets/3.png" ></div>
+    <div *ngSwitchCase = "'virtualbox'">
+        <p style="margin-top: 20px;">this is virtualbox logo </p><br>
+        <img src="assets/1.jpg"></div>
+    <div *ngSwitchCase = "'androidstudio'">
+       <p style="margin-top: 20px;"> this is androidstudio logo</p> <br>
+        <img src="assets/2.png"></div>
+
+</div>
+<div style="margin-top: 150px;margin-bottom: 150px;">
+    <hr>
+  </div>
