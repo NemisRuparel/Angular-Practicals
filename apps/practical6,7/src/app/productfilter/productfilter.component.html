@@ -1,0 +1,21 @@
+<h1 align="center">Search for  : <input type="text" placeholder="search item" [(ngModel)]="searchQuery" style="height: 30px;"></h1>
+<p>{{searchQuery}}</p>
+<table align="center" style="border: 1px solid black;"width="500px;">
+
+    <tr>
+        <th>sr. no</th>
+        <th>name</th>
+        <th>price</th>
+        <th>image</th>
+        <th>date</th>
+    </tr>
+    <tr *ngFor="let item of products|filter:searchQuery; index as i">
+        <td>{{i+1}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.price}}</td>
+        <td><img src="{{item.image}}" style="height: 150px;width: 150px;"></td>
+        <td>{{todaydate|date}}</td>
+
+    </tr>
+
+</table>
