@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Information</title>
+    </head>
+<body>
+    <form action="" #myForm="ngForm" (ngSubmit)="OnSubmit(myForm)">
+        <div class="container">
+            <div class="h1class">
+                <h1 align="center">Student Information</h1>
+            </div>
+            <label for="name"><b>Your Name : </b></label> <br>
+            <input type="text" name="nm" #nm="ngModel" required ngModel>
+            <small *ngIf="nm.invalid && (nm.dirty || nm.touched)">Enter Valid Name</small>
+            <br><br>
+            <label for="currcomp"><b>Your School Name : </b></label>
+            <input type="text" name="currcomp" required #cc="ngModel" ngModel>
+            <small *ngIf="cc.invalid && (cc.dirty || cc.touched)">Valid School name is required</small>
+            <br><br>
+            <label for="pastcomp"><b>Your G. R. Number : </b></label>
+            <input type="text" name="pc" #pc="ngModel" ngModel required>
+            <small *ngIf="pc.invalid && (pc.dirty || pc.touched)">Valid G.R. Number is required</small>
+            <br><br>
+            <label for="exp"><b>Your Age : </b></label>
+            <input type="number" name="exp" required #exp="ngModel" ngModel  min="6">
+            <small *ngIf="exp.invalid && (exp.dirty || exp.touched)">please enter valid age</small>
+            <br><br>
+            <label for="salary" ><b>Standard : </b></label>
+            <input type="number" #sal="ngModel" ngModel name="sal" required min="3">
+            <small *ngIf="sal.invalid && (sal.dirty || sal.touched)">Valid standard is required</small>
+            <br><br>
+            <label for="email"><b>Your Email : </b></label>
+            <input type="email" name="email" required #email="ngModel" ngModel email>
+            <small *ngIf="email.invalid && (email.dirty || email.touched) ">valid email is required</small>
+            <br><br>
+            <label for="mobileno"><b>Phone No. (+91) : </b></label>
+            <input type="text" name="mobileno" required #mono="ngModel" ngModel  maxlength="10" minlength="10">
+            <small *ngIf="mono.invalid && (mono.dirty || mono.touched)">valid mobile number is required</small>
+            <br><br>
+            <button type="submit" class="submitbtn">Print Details...!</button>
+        </div>
+    </form>
+</body>
+</html>

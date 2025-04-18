@@ -1,0 +1,9 @@
+<div *ngIf="product" class="detail-container">
+  <img [src]="product.image" />
+  <div class="details">
+    <h2>{{ product.name }}</h2>
+    <h4>Price: ₹{{ product.price }}</h4>
+    <p>{{ product.description }}</p>
+    <a routerLink="/">⬅ Back to Products</a>
+  </div>
+</div>

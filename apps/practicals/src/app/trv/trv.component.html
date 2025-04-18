@@ -1,0 +1,34 @@
+
+<div class="container">   
+    <div class="add-section">
+      <input 
+        type="text" 
+        #studentInput
+        placeholder="Enter student name"
+        (click)="addStudent(studentInput)"
+      >
+      <button (click)="addStudent(studentInput)">Add Student</button>
+    </div>
+  
+    <table *ngIf="students.length > 0" class="student-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let student of students">
+          <td>{{student.id}}</td>
+          <td>{{student.name}}</td>
+          <td>
+            <button class="remove-btn" (click)="removeStudent(student.id)">
+              Remove
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p *ngIf="students.length === 0">No students added yet.</p>
+  </div>

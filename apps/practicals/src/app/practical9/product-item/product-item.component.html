@@ -1,0 +1,11 @@
+<div class="product-card">
+  <h3>{{ product.name }}</h3>
+  <p class="price">Price: ${{ product.price }}</p>
+  <p class="quantity">Available: {{ product.quantity }}</p>
+  <button 
+    [disabled]="product.quantity === 0"
+    (click)="addToCart()"
+    class="add-btn" style="margin-left:50px">
+    Add to Cart 
+  </button>
+</div>

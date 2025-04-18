@@ -1,0 +1,42 @@
+.app-container {
+  margin: 0 auto;
+  padding: 30px 20px;
+  background: #f4f6f8;
+  min-height: 100vh;
+}
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 40px;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+h1::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, #28a745, #2ecc71);
+  margin: 10px auto;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+}
+
+/* header {
+  background: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+} */

@@ -1,0 +1,7 @@
+<div class="mobile-container">
+    <div class="mobile-card" *ngFor="let mobile of mobiles">
+      <img [src]="mobile.image" alt="{{mobile.name}}" />
+      <h3>{{ mobile.name }}</h3>
+      <p>Price: ₹{{ mobile.price }}</p>
+    </div>
+  </div>

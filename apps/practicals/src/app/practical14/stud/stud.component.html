@@ -1,0 +1,21 @@
+<h2 align="center">Student Records</h2>
+<table align="center" border="1" cellpadding="10" style="width: 80%; margin-top: 20px;">
+  <thead style="background-color: #1976d2; color: white;">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Username</th>
+      <th>Email</th>
+      <th>City</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let student of students" align="center">
+      <td>{{ student.id }}</td>
+      <td>{{ student.name }}</td>
+      <td>{{ student.username }}</td>
+      <td>{{ student.email }}</td>
+      <td>{{ student.address.city }}</td>
+    </tr>
+  </tbody>
+</table>
